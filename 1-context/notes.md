@@ -51,3 +51,22 @@ special value - special keyword means that the variable have not set to a value
 the order in which the function invocatins take place in the JS engine
 it happenes in the order of - last in first out (stack) and it runs
 synchronous single threaded whick means only one at a time in one context
+
+## Variable environment
+
+every execution context have it's own `scope` meaning that any thing will\
+be defined will be stored in it's own `scope` seperate fom other scopes\
+examples would be a `global context` and a `function context` == scope
+
+## Outer environment
+
+every execution context have a reference for the outer environment\
+this is handy in the case of checking for variables
+
+## Scope chain
+
+there are a chain of sopes from any execution context till we reach\
+the `gloabl scope` where there is no outer environment, if any var\
+not defined in a certain scope it will check it's outer env. till\
+it reaches the most outer env. `gloabl` if not there will through\
+an error as there is no reference to that variable in any context.
