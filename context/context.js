@@ -58,7 +58,7 @@ function seconFunction() {
 }
 
 function thirdFunction() {
-  const anotherVar = 'anotherVar in thirsFuntion scope'
+  const anotherVar = 'anotherVar in thirdFuntion scope'
 
   function forthFunction() {
     console.log(anotherVar)
